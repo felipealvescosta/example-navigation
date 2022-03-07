@@ -1,15 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native'
 
-const App = () => {
+const About = () => {
   const navigation = useNavigation();
   
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
-      <Button title="About" onPress={ ()=>   navigation.navigate('About')} />
+      <Text>About</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -26,4 +25,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default App;
+export default About;
